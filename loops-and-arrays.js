@@ -5,14 +5,19 @@
 // ==========================================
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
+for (i=0;i<names.length;i++) {names[i] = names[i]+ "je"};
+console.log(names)
+
+
+//>>namen komen onder elkaar in terminal te staan, krijg ze niet in een nieuwe array. op internet gezocht en volgende oplossing gevonden:
+//const newNames = names.map(i=>[i]+"je");
+//console.log(newNames);
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
-
-
 
 
 // ==========================================
@@ -22,6 +27,18 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+    //    console.log(numbers);
+for (i=0;i<numbers.length;i++)
+//{console.log(numbers[i]*2)}
+if (numbers[i] % 2 === 0){numbers[i] = numbers[i] * 2}
+else{numbers[i] = numbers[i] * 3}
+console.log(numbers)
+//>>nummers komen onder elkaar in terminal te staan, krijg ze niet in een nieuwe array.
+//const newNumbers = numbers.map(i=>[i]*2); //dit maakt een nieuwe array maar zonder mogelijkheid *2 of *3 juist te doen
+//console.log(newNumbers)
+
+
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -41,6 +58,12 @@ const numbers = [2, 4, 5, 29, 38];
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+for (i=0;i<squares.length;i++)
+{squares[i] = "Het volume van " + squares[i] + " is " + squares[i]*squares[i]*squares[i]}
+console.log(squares)
+
+//("Het volume van " + squares[i] + " is " + squares[i]*squares[i]*squares[i])};
+//de uitkomst klopt gedeeltelijk, echter komt het niet terug in een array te staan
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
